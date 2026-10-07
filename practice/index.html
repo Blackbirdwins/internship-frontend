@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight Revised - Stickman Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="screen">
+        <h1>SHADOW FIGHT REVISED</h1>
+        <h2>Stickman Edition</h2>
+        <p>You are a shadow in human form. Master martial arts, awaken your anime powers, and defeat the demon horde.</p>
+        <button onclick="startGame()">ENTER THE ARENA</button>
+        <div class="admin-tip">Admin Console available in-game (Top Right).</div>
+    </div>
+
+    <!-- Game Wrapper -->
+    <div id="game-wrapper" class="hidden">
+        <!-- HUD Overlay -->
+        <div id="hud">
+            <div class="hud-left">
+                <div class="name">Shadow (You)</div>
+                <div class="bar-container">
+                    <div id="player-hp" class="hp-fill"></div>
+                    <div id="player-mana" class="mana-fill"></div>
+                </div>
+                <div class="stats">DMG: <span id="stat-dmg">10</span> | SPD: <span id="stat-spd">3</span></div>
+            </div>
+            <div class="hud-center">
+                <div id="wave-display">Wave 1</div>
+                <div id="timer">00:00</div>
+            </div>
+            <div class="hud-right">
+                <div class="name" id="enemy-name">Demon</div>
+                <div class="bar-container enemy">
+                    <div id="enemy-hp" class="hp-fill"></div>
+                </div>
+                <div class="stats">Coins: <span id="coins">0</span></div>
+            </div>
+        </div>
+
+        <!-- Combat Canvas -->
+        <canvas id="gameCanvas" width="2560" height="1600"></canvas>
+
+        <!-- Controls HUD -->
+        <div id="controls-hud">
+            <span>A/D - Move</span>
+            <span>W - Jump</span>
+            <span>J - Martial Arts</span>
+            <span>K - Shadow Blast</span>
+            <span>L - Teleport Dash</span>
+            <span>U - Energy Orb</span>
+            <span>I - Domain Expansion</span>
+            <span>E - Shop</span>
+        </div>
+    </div>
+
+    <!-- Shop Overlay -->
+    <div id="shop-overlay" class="hidden">
+        <div class="shop-content">
+            <h2>Shadow Shop</h2>
+            <p>Coins: <span id="shop-coins">0</span></p>
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <h3>Weapon Upgrade</h3>
+                    <p>Increase Base Damage by 5.</p>
+                    <button onclick="buyItem('damage')">Buy (100 Coins)</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Health Upgrade</h3>
+                    <p>Increase Max HP by 50 and heal to full.</p>
+                    <button onclick="buyItem('health')">Buy (100 Coins)</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Mana Upgrade</h3>
+                    <p>Increase Max Mana by 50.</p>
+                    <button onclick="buyItem('mana')">Buy (100 Coins)</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Speed Upgrade</h3>
+                    <p>Increase Movement Speed by 1.</p>
+                    <button onclick="buyItem('speed')">Buy (150 Coins)</button>
+                </div>
+            </div>
+            <button class="close-btn" onclick="toggleShop()">Close Shop</button>
+        </div>
+    </div>
+
+    <!-- Admin Console -->
+    <div id="admin-console">
+        <div class="console-header">Admin Console</div>
+        <div id="console-output">System ready...<br>Type /help for commands</div>
+        <div class="console-input-wrapper">
+            <input type="text" id="admin-input" placeholder="Type command here..." autocomplete="off">
+            <button onclick="runAdminCommand()">Execute</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

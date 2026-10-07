@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anas - Full Stack Developer Portfolio">
+    <title>Anas | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="logo">Anas<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="home" class="hero" aria-labelledby="home-heading">
+            <div class="hero-text">
+                <h1 id="home-heading">Hi, I'm <span class="highlight">Anas</span></h1>
+                <p>Full Stack Developer</p>
+                <p class="hero-sub">Spring Boot • MySQL • HTML • CSS • JavaScript</p>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I'm a Full Stack Developer from Pakistan.</p>
+            <p>I build backend APIs with Spring Boot and frontend with HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="grid-12">
+                <div class="col-3 skill-card">Spring Boot</div>
+                <div class="col-3 skill-card">MySQL</div>
+                <div class="col-3 skill-card">HTML & CSS</div>
+                <div class="col-3 skill-card">JavaScript</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="grid-12">
+                <article class="col-4 project-card">
+                    <h3>Student Management System</h3>
+                    <p>Backend REST API with JWT security, role-based access, caching, and scheduler.</p>
+                    <p class="tech">Spring Boot • MySQL • JWT</p>
+                </article>
+                <article class="col-4 project-card">
+                    <h3>Cloud Burst Detection</h3>
+                    <p>Real-time weather monitoring system with Kafka pipeline and detection engine.</p>
+                    <p class="tech">Spring Boot • Kafka • MySQL</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="aside" role="complementary" aria-labelledby="aside-heading">
+            <h3 id="aside-heading">Quick Info</h3>
+            <ul>
+                <li><strong>Location:</strong> Pakistan</li>
+                <li><strong>Status:</strong> Available</li>
+                <li><strong>Focus:</strong> Backend + Frontend</li>
+            </ul>
+        </aside>
+
+        <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>Email: <a href="mailto:anas17702@gmail.com">anas17702@gmail.com.com</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">github.com/anas</a></p>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 Anas. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

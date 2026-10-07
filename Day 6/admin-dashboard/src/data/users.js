@@ -1,0 +1,17 @@
+export const users = [
+  { id: 1, name: 'Anas Khan', email: 'anas@example.pk', role: 'Admin', status: 'active', joined: '2026-01-15', orders: 42, spent: 125000 },
+  { id: 2, name: 'Ali Raza', email: 'ali@example.pk', role: 'User', status: 'active', joined: '2026-02-20', orders: 18, spent: 45000 },
+  { id: 3, name: 'Fatima Malik', email: 'fatima@example.pk', role: 'User', status: 'pending', joined: '2026-03-10', orders: 5, spent: 12000 },
+  { id: 4, name: 'Bilal Ahmed', email: 'bilal@example.pk', role: 'Moderator', status: 'active', joined: '2026-03-25', orders: 31, spent: 89000 },
+  { id: 5, name: 'Ayesha Iqbal', email: 'ayesha@example.pk', role: 'User', status: 'inactive', joined: '2026-04-05', orders: 2, spent: 3500 },
+  { id: 6, name: 'Usman Tariq', email: 'usman@example.pk', role: 'User', status: 'active', joined: '2026-04-18', orders: 27, spent: 67000 },
+  { id: 7, name: 'Hira Shahid', email: 'hira@example.pk', role: 'User', status: 'active', joined: '2026-05-02', orders: 14, spent: 38000 },
+  { id: 8, name: 'Omar Farooq', email: 'omar@example.pk', role: 'Moderator', status: 'active', joined: '2026-05-20', orders: 55, spent: 178000 },
+  { id: 9, name: 'Zainab Ali', email: 'zainab@example.pk', role: 'User', status: 'pending', joined: '2026-06-01', orders: 1, spent: 2000 },
+  { id: 10, name: 'Saad Ahmed', email: 'saad@example.pk', role: 'User', status: 'active', joined: '2026-06-15', orders: 22, spent: 54000 },
+  { id: 11, name: 'Maryam Khan', email: 'maryam@example.pk', role: 'Admin', status: 'active', joined: '2026-07-01', orders: 68, spent: 245000 },
+  { id: 12, name: 'Hassan Raza', email: 'hassan@example.pk', role: 'User', status: 'inactive', joined: '2026-07-20', orders: 3, spent: 8000 },
+  { id: 13, name: 'Sana Iqbal', email: 'sana@example.pk', role: 'User', status: 'active', joined: '2026-08-05', orders: 9, spent: 22000 },
+  { id: 14, name: 'Imran Shah', email: 'imran@example.pk', role: 'User', status: 'pending', joined: '2026-08-22', orders: 0, spent: 0 },
+  { id: 15, name: 'Nida Ahmed', email: 'nida@example.pk', role: 'Moderator', status: 'active', joined: '2026-09-01', orders: 37, spent: 112000 },
+];

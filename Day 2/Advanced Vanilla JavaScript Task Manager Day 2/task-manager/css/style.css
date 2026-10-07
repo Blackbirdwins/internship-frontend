@@ -1,0 +1,118 @@
+:root {
+    --primary: #4f46e5;
+    --danger: #ef4444;
+    --success: #10b981;
+    --text: #1f2937;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --border: #e5e7eb;
+    --radius: 8px;
+}
+
+[data-theme="dark"] {
+    --text: #f9fafb;
+    --bg: #111827;
+    --bg-alt: #1f2937;
+    --border: #374151;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+h1, h2 { color: var(--primary); }
+
+section {
+    background: var(--bg-alt);
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+}
+
+#taskForm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+}
+
+input[type="text"], input[type="search"] { flex: 1; min-width: 150px; }
+
+button {
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover { opacity: 0.9; }
+
+.error { color: var(--danger); margin-top: 10px; }
+
+.controls { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.task-list { list-style: none; }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.task-item.completed { opacity: 0.6; text-decoration: line-through; }
+.task-item.priority-high { border-left-color: var(--danger); }
+.task-item.priority-medium { border-left-color: #f59e0b; }
+.task-item.priority-low { border-left-color: var(--success); }
+
+.task-actions button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.btn-delete { background: var(--danger); }
+.btn-complete { background: var(--success); }
+
+.empty { text-align: center; color: #6b7280; padding: 20px; }
+
+.analytics-panel {
+    background: var(--bg-alt);
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-top: 20px;
+}
+
+.user-card {
+    background: var(--bg);
+    padding: 10px;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}

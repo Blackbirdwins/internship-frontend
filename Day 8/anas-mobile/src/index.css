@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff2e88;
+  --color-secondary: #00f5d4;
+  --color-accent: #ffb700;
+  --color-bg: #0d0221;
+  --color-bg-card: #1a0933;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  background: #0d0221;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Synthwave gradient grid bg */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 46, 136, 0.25), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(0, 245, 212, 0.15), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 0% 80%, rgba(157, 78, 221, 0.2), transparent 60%),
+    #0d0221;
+}
+
+/* Retro grid */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 46, 136, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 212, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: linear-gradient(to bottom, transparent 40%, black 100%);
+  pointer-events: none;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #1a0933; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff2e88, #9d4edd);
+  border-radius: 10px;
+  border: 2px solid #1a0933;
+}
+
+*:focus-visible {
+  outline: 2px solid #ff2e88;
+  outline-offset: 2px;
+}

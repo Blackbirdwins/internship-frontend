@@ -1,23 +1,17 @@
-# Dependencies
 node_modules/
-
-# Production build
+*/node_modules/
+.expo/
 dist/
-build/
-.next/
-
-# Environment
+web-build/
+*.orig.*
 .env
 .env.local
-.env.production
-
-# Logs
 *.log
 npm-debug.log*
-
-# Editor
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
-
-# OS
-.DS_Store
+*.swp

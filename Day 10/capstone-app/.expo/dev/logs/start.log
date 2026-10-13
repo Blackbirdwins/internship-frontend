@@ -1,0 +1,206 @@
+{"_e":"root:init","_t":1791870291798,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791870291798,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791870291799,"mode":"development","files":[],"env":{}}
+{"_e":"root:init","_t":1791870361875,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791870361876,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791870361877,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791870361979,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791870362113,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791870362204,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791870362590,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791870366882,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870366882,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870366884,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870366984,"id":"1","progress":0.916951331496786,"total":165,"current":158}
+{"_e":"metro:bundling:progress","_t":1791870367084,"id":"1","progress":0.9888580256546299,"total":179,"current":178}
+{"_e":"metro:bundling:progress","_t":1791870367146,"id":"1","progress":0.999,"total":179,"current":179}
+{"_e":"metro:bundling:done","_t":1791870367182,"id":"1","total":179,"ms":299.503291}
+{"_e":"metro:client_log","_t":1791870367265,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791870380234,"id":"2","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870380234,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791870380246,"id":"2","total":1,"ms":12.145093}
+{"_e":"metro:client_log","_t":1791870380292,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:failed","_t":1791870532810,"id":null,"message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:client_log","_t":1791870532812,"level":"error","data":["[UnableToResolveError: Unable to resolve module react-native-gesture-handler from /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/App.js: react-native-gesture-handler could not be found within the project or in these directories:\n  node_modules\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';]"]}
+{"_e":"metro:bundling:started","_t":1791870546905,"id":"4","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870546905,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870546905,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870546909,"id":"4","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:bundling:started","_t":1791870547461,"id":"6","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870547461,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870547462,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870547465,"id":"6","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:bundling:started","_t":1791870547670,"id":"8","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870547670,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870547670,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870547676,"id":"8","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:bundling:started","_t":1791870547818,"id":"a","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870547818,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870547818,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870547822,"id":"a","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:bundling:started","_t":1791870549142,"id":"c","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870549142,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870549143,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870549146,"id":"c","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"metro:bundling:started","_t":1791870549399,"id":"e","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870549399,"id":"e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870549399,"id":"e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870549402,"id":"e","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"root:init","_t":1791870558094,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791870558095,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791870558096,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791870558207,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791870558339,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791870558425,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791870558821,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791870560074,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870560075,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870560076,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870560174,"id":"1","message":"Unable to resolve \"react-native-gesture-handler\" from \"App.js\"\n> 1 | import 'react-native-gesture-handler';\n    |         ^\n  2 | import { StatusBar } from 'expo-status-bar';\n  3 | import { SafeAreaProvider } from 'react-native-safe-area-context';\n  4 | import { NavigationContainer } from '@react-navigation/native';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"react-native-gesture-handler\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"react-native-gesture-handler","originModulePath":"App.js"}
+{"_e":"root:init","_t":1791870733243,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791870733243,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791870733244,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791870733353,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791870733487,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791870733580,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791870734078,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791870734583,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791870734584,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791870734586,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791870734590,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1791871057822,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791871057823,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791871057823,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791871057923,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791871058056,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791871058153,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791871058683,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791871059195,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871059195,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871059198,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871059435,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1791871059535,"id":"1","progress":0.012913223140495866,"total":44,"current":5}
+{"_e":"metro:bundling:progress","_t":1791871059635,"id":"1","progress":0.06518786781349026,"total":47,"current":12}
+{"_e":"metro:bundling:progress","_t":1791871059735,"id":"1","progress":0.06518786781349026,"total":84,"current":20}
+{"_e":"metro:bundling:progress","_t":1791871059835,"id":"1","progress":0.0774790094590286,"total":97,"current":27}
+{"_e":"metro:bundling:progress","_t":1791871059939,"id":"1","progress":0.1991667235844546,"total":121,"current":54}
+{"_e":"metro:bundling:progress","_t":1791871060043,"id":"1","progress":0.2438652644413961,"total":162,"current":80}
+{"_e":"metro:bundling:progress","_t":1791871060143,"id":"1","progress":0.2438652644413961,"total":259,"current":127}
+{"_e":"metro:bundling:progress","_t":1791871060243,"id":"1","progress":0.432825484764543,"total":304,"current":200}
+{"_e":"metro:bundling:progress","_t":1791871060343,"id":"1","progress":0.432825484764543,"total":382,"current":246}
+{"_e":"metro:bundling:progress","_t":1791871060444,"id":"1","progress":0.432825484764543,"total":468,"current":301}
+{"_e":"metro:bundling:progress","_t":1791871060544,"id":"1","progress":0.4836942886587593,"total":509,"current":354}
+{"_e":"metro:bundling:progress","_t":1791871060644,"id":"1","progress":0.4909693370529567,"total":578,"current":405}
+{"_e":"metro:bundling:progress","_t":1791871060744,"id":"1","progress":0.4909693370529567,"total":659,"current":461}
+{"_e":"metro:bundling:progress","_t":1791871060845,"id":"1","progress":0.5331317712270093,"total":693,"current":506}
+{"_e":"metro:bundling:progress","_t":1791871060946,"id":"1","progress":0.5736133372625405,"total":746,"current":565}
+{"_e":"metro:bundling:progress","_t":1791871061045,"id":"1","progress":0.5898087544409484,"total":806,"current":619}
+{"_e":"metro:bundling:progress","_t":1791871061145,"id":"1","progress":0.6445686946022647,"total":842,"current":676}
+{"_e":"metro:bundling:progress","_t":1791871061246,"id":"1","progress":0.7174855559240515,"total":863,"current":731}
+{"_e":"metro:bundling:progress","_t":1791871061347,"id":"1","progress":0.7491071470584083,"total":922,"current":798}
+{"_e":"metro:bundling:progress","_t":1791871061447,"id":"1","progress":0.7824709744463412,"total":927,"current":820}
+{"_e":"metro:bundling:progress","_t":1791871061547,"id":"1","progress":0.8250534920569709,"total":949,"current":862}
+{"_e":"metro:bundling:progress","_t":1791871061648,"id":"1","progress":0.8691976331360947,"total":975,"current":909}
+{"_e":"metro:bundling:progress","_t":1791871061748,"id":"1","progress":0.9119221135776509,"total":1021,"current":975}
+{"_e":"metro:bundling:progress","_t":1791871061848,"id":"1","progress":0.9507600463470968,"total":1083,"current":1056}
+{"_e":"metro:bundling:progress","_t":1791871061949,"id":"1","progress":0.9981842945188133,"total":1101,"current":1100}
+{"_e":"metro:bundling:progress","_t":1791871062800,"id":"1","progress":0.999,"total":1101,"current":1101}
+{"_e":"metro:bundling:done","_t":1791871062930,"id":"1","total":1101,"ms":3734.475098}
+{"_e":"metro:client_log","_t":1791871063134,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791871429974,"id":"2","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871429974,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791871430003,"id":"2","total":1,"ms":29.280262}
+{"_e":"metro:client_log","_t":1791871430212,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791871431123,"id":"4","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871431123,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791871431149,"id":"4","total":1,"ms":25.994837}
+{"_e":"metro:client_log","_t":1791871431291,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:failed","_t":1791871733734,"id":null,"message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1791871733737,"level":"error","data":["[TransformError: SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"]"]}
+{"_e":"metro:bundling:started","_t":1791871740617,"id":"6","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871740617,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871740618,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791871740624,"id":"6","message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1791871744909,"id":"8","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871744909,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871744910,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791871744916,"id":"8","message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1791871745143,"id":"a","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871745143,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871745144,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791871745150,"id":"a","message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1791871753380,"id":"c","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871753380,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871753381,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1791871753390,"id":"c","message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1791871799598,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791871799598,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791871799599,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791871799699,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791871799832,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791871799930,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791871800445,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791871804262,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871804262,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871804264,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871804364,"id":"1","progress":0.17807202856999144,"total":282,"current":119}
+{"_e":"metro:bundling:progress","_t":1791871804464,"id":"1","progress":0.503463553838028,"total":513,"current":364}
+{"_e":"metro:bundling:progress","_t":1791871804564,"id":"1","progress":0.667298026648676,"total":770,"current":629}
+{"_e":"metro:bundling:progress","_t":1791871804664,"id":"1","progress":0.9420993687953527,"total":987,"current":958}
+{"_e":"metro:bundling:failed","_t":1791871804698,"id":"1","message":"SyntaxError: /home/anas/Documents/Internship FrontEnd/Day 10/capstone-app/src/screens/ApiListingScreen.jsx: Unexpected token (38:16)\n\n  36 |     >\n  37 |       <View style={[styles.imageWrap, { backgroundColor: colors.bgElevated }]}>\n> 38 |         <require('react-native').Image\n     |                 ^\n  39 |           source={{ uri: product.thumbnail }}\n  40 |           style={styles.image}\n  41 |           resizeMode=\"cover\"","importStack":null,"filename":"src/screens/ApiListingScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1791871889153,"id":"2","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791871889153,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871889155,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791871889255,"id":"2","progress":0.2656702484377381,"total":324,"current":167}
+{"_e":"metro:bundling:progress","_t":1791871889355,"id":"2","progress":0.5631325554743509,"total":593,"current":445}
+{"_e":"metro:bundling:progress","_t":1791871889455,"id":"2","progress":0.7506940009644333,"total":831,"current":720}
+{"_e":"metro:bundling:progress","_t":1791871889555,"id":"2","progress":0.9748663551073933,"total":1107,"current":1093}
+{"_e":"metro:bundling:done","_t":1791871889618,"id":"2","total":1107,"ms":464.313259}
+{"_e":"metro:client_log","_t":1791871889864,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791872055833,"id":"4","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791872055833,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791872055864,"id":"4","total":1,"ms":30.959648}
+{"_e":"metro:client_log","_t":1791872056073,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791872218634,"id":"6","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791872218634,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791872218663,"id":"6","total":1,"ms":28.442787}
+{"_e":"metro:client_log","_t":1791872218876,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"root:init","_t":1791872316631,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791872316632,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791872316632,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791872316738,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791872316870,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791872316960,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791872317492,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791872318034,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791872318034,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791872318036,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791872318137,"id":"1","progress":0.17509179618731452,"total":282,"current":118}
+{"_e":"metro:bundling:progress","_t":1791872318238,"id":"1","progress":0.550376742502623,"total":523,"current":388}
+{"_e":"metro:bundling:progress","_t":1791872318338,"id":"1","progress":0.6754658947533642,"total":814,"current":669}
+{"_e":"metro:bundling:progress","_t":1791872318438,"id":"1","progress":0.9375453032544379,"total":1040,"current":1007}
+{"_e":"metro:bundling:done","_t":1791872318499,"id":"1","total":1040,"ms":464.947239}
+{"_e":"metro:client_log","_t":1791872318727,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"root:init","_t":1791872477073,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791872477074,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791872477075,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791872477177,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791872477311,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791872477402,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791872477945,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"root:init","_t":1791872500283,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791872500284,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791872500285,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791872500384,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791872500517,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791872500614,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791872501142,"atlas":false,"workers":17,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791872501640,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1791872501640,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791872501643,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791872501743,"id":"1","progress":0.21325371684639244,"total":301,"current":139}
+{"_e":"metro:bundling:progress","_t":1791872501843,"id":"1","progress":0.4030833288760702,"total":493,"current":313}
+{"_e":"metro:bundling:progress","_t":1791872501943,"id":"1","progress":0.6622738308376737,"total":768,"current":625}
+{"_e":"metro:bundling:progress","_t":1791872502043,"id":"1","progress":0.931021751312111,"total":997,"current":962}
+{"_e":"metro:bundling:done","_t":1791872502109,"id":"1","total":997,"ms":468.374232}
+{"_e":"metro:client_log","_t":1791872502337,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}

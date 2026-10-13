@@ -1,0 +1,216 @@
+
+Ctrl+S.
+
+---
+
+## 📄 FILE 2 — `DEMO_SCRIPT.md` (Viva/Presentation Ke Liye)
+
+File banao: `capstone-app/DEMO_SCRIPT.md`
+
+```markdown
+# 🎬 Demo Script — Capstone App Presentation
+
+**Duration**: 5-7 minutes
+**Audience**: Mentor, panel, or reviewer
+
+---
+
+## 🎯 Opening (30 sec)
+
+> "Yeh mera Day 10 Capstone project hai — ek Notes + Favorites + API Explorer app.
+> React Native + Expo se banaya hai. Cross-platform hai — mobile, tablet, aur web pe chalega.
+> Isme Day 1 se Day 9 tak ka sab kuch integrate kiya hai — navigation, auth, CRUD, API, theming, responsive design."
+
+---
+
+## 🔐 Section 1 — Authentication (45 sec)
+
+**Action:** Open app → Login screen dikhegi
+
+**Bolna:**
+> "Yeh Login screen hai. Mock authentication use kiya hai — AsyncStorage mein session persist karta hai.
+> Demo credentials: `anas` / `anas123`."
+
+**Kar ke dikhao:**
+1. Sign In dabao
+2. Home Dashboard pe pahuncho
+3. **Refresh karo browser** — session persist hota hai
+4. Drawer → Logout → Login pe wapas
+
+---
+
+## 🏠 Section 2 — Home Dashboard (45 sec)
+
+**Bolna:**
+> "Dashboard pe 3 sections hain:
+> - **Hero card** — user info with accent strip
+> - **Overview stats** — live counts (Notes, Saved, Pinned)
+> - **Quick Actions** — direct shortcuts
+> - **Pinned + Recent notes** — direct navigate karo"
+
+**Kar ke dikhao:**
+1. Hover karo stat cards pe — lift animation
+2. "New Note" dabao
+
+---
+
+## 📝 Section 3 — Notes CRUD (1 min)
+
+**Bolna:**
+> "Notes tab mein full CRUD hai — Create, Read, Update, Delete, aur Pin.
+> Data AsyncStorage mein persist hota hai."
+
+**Kar ke dikhao:**
+1. New note banao — title + body + accent color
+2. Save dabao — toast aa jayegi
+3. Notes list mein dikhega
+4. Note tap karo → edit screen
+5. Pin icon dabao → pinned section mein move
+6. Delete karo → confirm dialog
+
+---
+
+## 🌐 Section 4 — API Integration (1 min)
+
+**Bolna:**
+> "Explore tab mein DummyJSON API se products fetch karte hain.
+> Search, filtering, aur grid responsive hai — columns screen width ke hisaab se badalte hain."
+
+**Kar ke dikhao:**
+1. Browser ko **chhota karo** (mobile view) — 2 columns
+2. **Bada karo** (desktop) — 5 columns
+3. Product tap karo → details screen
+4. **2-column layout** dikhao (desktop pe)
+5. Quantity change karo
+6. Add to Cart dabao
+
+---
+
+## ❤️ Section 5 — Favorites (30 sec)
+
+**Bolna:**
+> "Har product pe heart icon hai. Tap karo — favorites mein save ho jayega.
+> Session persist hota hai — refresh ke baad bhi saved rehta hai."
+
+**Kar ke dikhao:**
+1. Explore → heart tap karo (badge count update)
+2. Favorites tab → saved product dikhega
+3. Unfavorite karo → remove
+
+---
+
+## 🎨 Section 6 — Theme System (45 sec)
+
+**Bolna:**
+> "Dual theme system hai — Dark aur Light.
+> Saath mein 5 neon accent colors bhi — Cyber, Plasma, Magma, Toxic, Gold."
+
+**Kar ke dikhao:**
+1. Header ka theme icon dabao — instant switch
+2. Drawer → theme toggle bhi hai
+3. Refresh karo — theme persist hota hai
+
+---
+
+## 👤 Section 7 — Profile (30 sec)
+
+**Bolna:**
+> "Profile screen mein avatar picker hai — image library permission maangta hai.
+> Editable fields — phone, bio."
+
+**Kar ke dikhao:**
+1. Drawer → Profile
+2. Avatar tap karo → image picker
+3. Bio edit karo
+4. Save dabao → toast
+
+---
+
+## ⚙️ Section 8 — Settings (30 sec)
+
+**Bolna:**
+> "Settings mein theme control, data management — clear notes, clear favorites.
+> Aur account info."
+
+**Kar ke dikhao:**
+1. Drawer → Settings
+2. Dark mode toggle
+3. Clear notes tap karo → confirm
+
+---
+
+## 📱 Section 9 — Responsive Design (45 sec)
+
+**Bolna:**
+> "Yeh app **fully responsive** hai — mobile, tablet, aur desktop pe test kiya."
+
+**Kar ke dikhao:**
+1. Browser ko **chhota karo** (~400px) — mobile layout
+2. **Tablet size** (~800px) — grid 3 col
+3. **Desktop size** (~1400px) — grid 5 col, 2-column details
+4. Tab bar responsive — mobile pe full, desktop pe centered inline
+
+---
+
+## 🏆 Closing (30 sec)
+
+**Bolna:**
+> "Yeh project Day 1 se Day 9 tak ke sab concepts ka combination hai:
+> Navigation, State Management, Persistence, API Integration, Responsive Design,
+> Theming, Animations, aur Modern UI.
+>
+> Code modular hai — 10 screens, 11 components, 5 contexts, sab separate files mein.
+> Design system centralized hai — theme.js mein.
+> 
+> Thank you!"
+
+---
+
+## ❓ Likely Questions + Answers
+
+**Q: Real backend kyun nahi?**
+> A: Internship scope mein mock auth + AsyncStorage use kiya. Production mein API + JWT add hoga.
+
+**Q: State management library kyun nahi (Redux/Zustand)?**
+> A: Context API kaafi hai is scale pe. Redux overkill hota. Modular contexts (5) se clean code hai.
+
+**Q: API fail ho toh?**
+> A: Timeout 10 seconds hai. Error state dikhega with Retry button.
+
+**Q: Accessibility?**
+> A: Touch targets 44px+ hain. Contrast ratios WCAG AA meet karte hain.
+
+**Q: Performance?**
+> A: FlatList optimized — initialNumToRender, windowSize, removeClippedSubviews, React.memo.
+
+**Q: Tests likhe?**
+> A: Manual testing ki. Unit tests scope ke bahar the — production mein Jest + RNTL add hoga.
+
+---
+
+## 🎥 Recording Tips
+
+1. **Screen record** karo — OBS ya Loom
+2. **1080p minimum** — readable text
+3. **Cursor highlight** use karo (click indicator)
+4. **Zoom in** important interactions pe
+5. **Backing music nahi** — voice over only
+6. **Length**: 5-7 minutes ideal
+
+---
+
+## 📋 Pre-Demo Checklist
+
+- [ ] Server running (`npx expo start --web`)
+- [ ] Browser hard-refreshed (`Ctrl+Shift+R`)
+- [ ] Logged in as `anas` / `anas123`
+- [ ] At least 3-4 notes created
+- [ ] 2-3 products favorited
+- [ ] Both themes tested
+- [ ] All screens visited once (pre-cache)
+- [ ] Terminal not showing errors
+- [ ] Backup: video recording ready
+
+---
+
+**End of Demo Script**

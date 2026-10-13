@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { ScrollView, View, Text, StyleSheet, KeyboardAvoidingView, Platform, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
+import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from '../contexts/ToastContext';
 import Input from '../components/Input';
 import NeonButton from '../components/NeonButton';
-import { radius, spacing, shadows, neonGlow } from '../utils/theme';
+import { radius, shadows, neonGlow } from '../utils/theme';
 
 export default function LoginScreen({ navigation }) {
   const { colors, isDark, toggle, accent } = useTheme();
@@ -44,13 +45,13 @@ export default function LoginScreen({ navigation }) {
                 onPress={toggle}
                 style={[styles.iconBtn, { backgroundColor: colors.bgElevated, borderColor: colors.border }]}
               >
-                <Text style={{ fontSize: 16 }}>{isDark ? '☀' : '☾'}</Text>
+                <Ionicons name={isDark ? 'sunny-outline' : 'moon-outline'} size={18} color={colors.text} />
               </Pressable>
             </View>
 
             <View style={styles.brand}>
               <View style={[styles.logo, { backgroundColor: colors.primary }, logoGlow]}>
-                <Text style={styles.logoIcon}>⚡</Text>
+                <Ionicons name="flash" size={40} color="#05060A" />
               </View>
               <Text style={[styles.title, { color: colors.text }]}>CAPSTONE</Text>
               <Text style={[styles.subtitle, { color: colors.textMuted }]}>
@@ -68,7 +69,7 @@ export default function LoginScreen({ navigation }) {
                 onChangeText={setUsername}
                 placeholder="anas"
                 autoCapitalize="none"
-                icon="▸"
+                icon="person-outline"
               />
               <Input
                 label="PASSWORD"
@@ -76,17 +77,18 @@ export default function LoginScreen({ navigation }) {
                 onChangeText={setPassword}
                 placeholder="••••••"
                 secureTextEntry
-                icon="●"
+                icon="lock-closed-outline"
               />
 
               {error ? (
                 <View style={[styles.errorBox, { backgroundColor: colors.dangerSoft, borderColor: colors.danger }]}>
-                  <Text style={[styles.errorText, { color: colors.danger }]}>⚠ {error}</Text>
+                  <Ionicons name="alert-circle" size={16} color={colors.danger} />
+                  <Text style={[styles.errorText, { color: colors.danger }]}>{error}</Text>
                 </View>
               ) : null}
 
               <NeonButton variant="primary" onPress={handleLogin} loading={loading} fullWidth size="lg">
-                Enter →
+                Sign In
               </NeonButton>
             </View>
 
@@ -114,17 +116,25 @@ const styles = StyleSheet.create({
   safe: { flex: 1 },
   content: { padding: 24, paddingBottom: 40, flexGrow: 1 },
   topRow: { flexDirection: 'row', marginBottom: 20 },
-  iconBtn: { width: 40, height: 40, borderRadius: radius.sm, alignItems: 'center', justifyContent: 'center', borderWidth: 1 },
+  iconBtn: {
+    width: 40, height: 40, borderRadius: radius.sm,
+    alignItems: 'center', justifyContent: 'center', borderWidth: 1,
+  },
   brand: { alignItems: 'center', marginBottom: 32 },
-  logo: { width: 80, height: 80, borderRadius: 24, alignItems: 'center', justifyContent: 'center', marginBottom: 20 },
-  logoIcon: { fontSize: 38, color: '#05060A' },
+  logo: {
+    width: 80, height: 80, borderRadius: 24,
+    alignItems: 'center', justifyContent: 'center', marginBottom: 20,
+  },
   title: { fontSize: 32, fontWeight: '900', letterSpacing: 6, marginBottom: 6 },
   subtitle: { fontSize: 11, fontWeight: '700', letterSpacing: 2 },
   card: { padding: 24, borderRadius: radius.lg, borderWidth: 1, marginBottom: 20 },
   cardTitle: { fontSize: 18, fontWeight: '800', letterSpacing: 2, marginBottom: 4 },
   cardSub: { fontSize: 12, fontWeight: '500', marginBottom: 20 },
-  errorBox: { padding: 10, borderRadius: radius.sm, marginBottom: 12, borderWidth: 1 },
-  errorText: { fontSize: 12.5, fontWeight: '600' },
+  errorBox: {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    padding: 10, borderRadius: radius.sm, marginBottom: 12, borderWidth: 1,
+  },
+  errorText: { fontSize: 12.5, fontWeight: '600', flex: 1 },
   hintBox: { alignItems: 'center', marginBottom: 24 },
   hintLabel: { fontSize: 10, fontWeight: '800', letterSpacing: 1.5, marginBottom: 6 },
   hintText: { fontSize: 12.5, fontWeight: '500', letterSpacing: 0.5 },

@@ -2,6 +2,7 @@ import { View, Text, Pressable, StyleSheet, Platform } from 'react-native';
 import { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, DrawerActions } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 import { useFavorites } from '../contexts/FavoritesContext';
 import { radius, glassWeb, hoverTransition } from '../utils/theme';
@@ -10,9 +11,8 @@ export default function Header({ title, subtitle, onBack, rightAction, showMenu,
   const navigation = useNavigation();
   const { colors, isDark } = useTheme();
   const { ids } = useFavorites();
-  const [menuHover, setMenuHover] = useState(false);
 
-  const IconBtn = ({ icon, onPress, badge, hoverKey }) => {
+  const IconBtn = ({ iconName, onPress, badge }) => {
     const [hovered, setHovered] = useState(false);
     return (
       <Pressable
@@ -28,9 +28,11 @@ export default function Header({ title, subtitle, onBack, rightAction, showMenu,
           hoverTransition,
         ]}
       >
-        <Text style={[styles.iconText, { color: hovered ? colors.primary : colors.text }]}>
-          {icon}
-        </Text>
+        <Ionicons
+          name={iconName}
+          size={20}
+          color={hovered ? colors.primary : colors.text}
+        />
         {badge > 0 && (
           <View style={[styles.badge, { backgroundColor: colors.primary, borderColor: colors.bgCard }]}>
             <Text style={styles.badgeText}>{badge > 9 ? '9+' : badge}</Text>
@@ -46,7 +48,7 @@ export default function Header({ title, subtitle, onBack, rightAction, showMenu,
       style={[
         styles.safe,
         {
-          backgroundColor: isDark ? 'rgba(5, 6, 10, 0.78)' : 'rgba(241, 245, 249, 0.78)',
+          backgroundColor: isDark ? 'rgba(10, 10, 15, 0.78)' : 'rgba(248, 250, 252, 0.78)',
           borderBottomColor: colors.border,
         },
         Platform.OS === 'web' && glassWeb,
@@ -55,12 +57,15 @@ export default function Header({ title, subtitle, onBack, rightAction, showMenu,
       <View style={styles.container}>
         <View style={styles.left}>
           {onBack ? (
-            <IconBtn icon="←" onPress={onBack} />
+            <IconBtn iconName="arrow-back" onPress={onBack} />
           ) : showMenu ? (
-            <IconBtn icon="☰" onPress={() => navigation.dispatch(DrawerActions.openDrawer())} />
+            <IconBtn
+              iconName="menu"
+              onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+            />
           ) : (
             <View style={[styles.logoBox, { backgroundColor: colors.primary }]}>
-              <Text style={styles.logoIcon}>⚡</Text>
+              <Ionicons name="flash" size={20} color="#05060A" />
             </View>
           )}
           <View style={styles.titleBlock}>
@@ -79,14 +84,13 @@ export default function Header({ title, subtitle, onBack, rightAction, showMenu,
           <View>{rightAction}</View>
         ) : showFavs ? (
           <IconBtn
-            icon="♡"
+            iconName="heart-outline"
             badge={ids.length}
             onPress={() => navigation.navigate('Main', { screen: 'Tabs', params: { screen: 'Favorites' } })}
           />
         ) : null}
       </View>
-      {/* Neon underline accent */}
-      <View style={[styles.neonLine, { backgroundColor: colors.primary, shadowColor: colors.primary }]} />
+      <View style={[styles.neonLine, { backgroundColor: colors.primary }]} />
     </SafeAreaView>
   );
 }
@@ -103,13 +107,11 @@ const styles = StyleSheet.create({
     width: 40, height: 40, borderRadius: radius.sm,
     alignItems: 'center', justifyContent: 'center',
   },
-  logoIcon: { fontSize: 20, color: '#05060A' },
   iconBtn: {
     width: 40, height: 40, borderRadius: radius.sm,
     alignItems: 'center', justifyContent: 'center',
     borderWidth: 1, position: 'relative',
   },
-  iconText: { fontSize: 18, fontWeight: '600' },
   badge: {
     position: 'absolute', top: -4, right: -4,
     minWidth: 18, height: 18, borderRadius: 9,
@@ -126,9 +128,5 @@ const styles = StyleSheet.create({
     marginLeft: 16,
     borderTopRightRadius: 4,
     borderBottomRightRadius: 4,
-    ...Platform.select({
-      web: { boxShadow: '0 0 12px currentColor' },
-      default: {},
-    }),
   },
 });

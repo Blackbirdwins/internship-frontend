@@ -1,5 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Platform } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 import { radius } from '../utils/theme';
 
@@ -20,7 +21,14 @@ const Input = forwardRef(({ label, error, style, multiline, icon, ...props }, re
           error && { borderColor: colors.danger },
         ]}
       >
-        {icon && <Text style={styles.icon}>{icon}</Text>}
+        {icon && (
+          <Ionicons
+            name={icon}
+            size={18}
+            color={focused ? colors.primary : colors.textMuted}
+            style={{ marginRight: 8 }}
+          />
+        )}
         <TextInput
           ref={ref}
           style={[styles.input, { color: colors.text }, multiline && styles.multiline, style]}
@@ -54,7 +62,6 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     ...Platform.select({ web: { transition: 'all 0.2s ease' }, default: {} }),
   },
-  icon: { fontSize: 16, marginRight: 8, opacity: 0.6 },
   input: {
     flex: 1,
     paddingVertical: 14,

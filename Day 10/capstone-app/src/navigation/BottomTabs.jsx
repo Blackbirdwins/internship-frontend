@@ -2,6 +2,7 @@ import { View, Text, Pressable, StyleSheet, Platform } from 'react-native';
 import { useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 import { useFavorites } from '../contexts/FavoritesContext';
 import { useNotes } from '../contexts/NotesContext';
@@ -15,10 +16,10 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 const Tab = createBottomTabNavigator();
 
 const TABS = [
-  { name: 'Home', label: 'Home', icon: '⌂' },
-  { name: 'Notes', label: 'Notes', icon: '✎' },
-  { name: 'Api', label: 'Explore', icon: '◎' },
-  { name: 'Favorites', label: 'Saved', icon: '♡' },
+  { name: 'Home', label: 'Home', icon: 'home-outline', iconActive: 'home' },
+  { name: 'Notes', label: 'Notes', icon: 'document-text-outline', iconActive: 'document-text' },
+  { name: 'Api', label: 'Explore', icon: 'compass-outline', iconActive: 'compass' },
+  { name: 'Favorites', label: 'Saved', icon: 'heart-outline', iconActive: 'heart' },
 ];
 
 function TabItem({ tab, focused, onPress, count, colors, isDesktop }) {
@@ -50,9 +51,11 @@ function TabItem({ tab, focused, onPress, count, colors, isDesktop }) {
         }]} />
       )}
       <View style={styles.iconWrap}>
-        <Text style={[styles.icon, { color: iconColor, fontWeight: focused ? '800' : '500' }]}>
-          {tab.icon}
-        </Text>
+        <Ionicons
+          name={focused ? tab.iconActive : tab.icon}
+          size={22}
+          color={iconColor}
+        />
         {count > 0 && (
           <View style={[styles.countBadge, { backgroundColor: colors.primary, borderColor: colors.bgCard }]}>
             <Text style={styles.countText}>{count > 9 ? '9+' : count}</Text>
@@ -81,7 +84,7 @@ function CustomTabBar({ state, navigation }) {
       style={[
         styles.safe,
         {
-          backgroundColor: isDark ? 'rgba(5, 6, 10, 0.9)' : 'rgba(241, 245, 249, 0.9)',
+          backgroundColor: isDark ? 'rgba(10, 10, 15, 0.9)' : 'rgba(248, 250, 252, 0.9)',
           borderTopColor: colors.border,
         },
         Platform.OS === 'web' && glassWeb,
@@ -142,7 +145,6 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 2, borderBottomRightRadius: 2,
   },
   iconWrap: { position: 'relative' },
-  icon: { fontSize: 22 },
   countBadge: {
     position: 'absolute', top: -4, right: -10,
     minWidth: 16, height: 16, borderRadius: 8,

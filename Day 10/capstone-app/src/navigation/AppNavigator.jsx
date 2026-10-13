@@ -1,9 +1,9 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { useTheme } from '../contexts/ThemeContext';
 import { useAuth } from '../contexts/AuthContext';
 import BottomTabs from './BottomTabs';
 import DrawerMenu from './DrawerMenu';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import NoteEditScreen from '../screens/NoteEditScreen';
@@ -11,7 +11,7 @@ import ApiDetailsScreen from '../screens/ApiDetailsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function MainDrawer() {
@@ -44,8 +44,7 @@ export default function AppNavigator() {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: colors.bg },
-        animation: 'slide_from_right',
+        cardStyle: { backgroundColor: colors.bg },
       }}
     >
       {!user ? (

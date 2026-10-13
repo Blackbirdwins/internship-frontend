@@ -1,24 +1,25 @@
 import { View, Text, Pressable, ScrollView, StyleSheet, Platform } from 'react-native';
 import { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useFavorites } from '../contexts/FavoritesContext';
 import { useNotes } from '../contexts/NotesContext';
 import { useToast } from '../contexts/ToastContext';
 import Avatar from '../components/Avatar';
-import { radius, spacing, hoverTransition } from '../utils/theme';
+import { radius, hoverTransition } from '../utils/theme';
 
 const ITEMS = [
-  { icon: '⌂', label: 'Home', route: 'Tabs', screen: 'Home' },
-  { icon: '✎', label: 'Notes', route: 'Tabs', screen: 'Notes' },
-  { icon: '◎', label: 'Explore API', route: 'Tabs', screen: 'Api' },
-  { icon: '♡', label: 'Favorites', route: 'Tabs', screen: 'Favorites' },
+  { icon: 'home-outline', label: 'Home', route: 'Tabs', screen: 'Home' },
+  { icon: 'document-text-outline', label: 'Notes', route: 'Tabs', screen: 'Notes' },
+  { icon: 'compass-outline', label: 'Explore API', route: 'Tabs', screen: 'Api' },
+  { icon: 'heart-outline', label: 'Favorites', route: 'Tabs', screen: 'Favorites' },
 ];
 
 const SETTINGS = [
-  { icon: '⚙︎', label: 'Settings', route: 'Settings' },
-  { icon: '☺', label: 'Profile', route: 'Profile' },
+  { icon: 'settings-outline', label: 'Settings', route: 'Settings' },
+  { icon: 'person-outline', label: 'Profile', route: 'Profile' },
 ];
 
 function NavItem({ item, onPress, colors }) {
@@ -42,9 +43,11 @@ function NavItem({ item, onPress, colors }) {
         hoverTransition,
       ]}
     >
-      <Text style={[styles.itemIcon, { color: hovered ? colors.primary : colors.textMuted }]}>
-        {item.icon}
-      </Text>
+      <Ionicons
+        name={item.icon}
+        size={20}
+        color={hovered ? colors.primary : colors.textMuted}
+      />
       <Text style={[styles.itemLabel, { color: hovered ? colors.primary : colors.text }]}>
         {item.label}
       </Text>
@@ -78,12 +81,12 @@ export default function DrawerMenu({ navigation }) {
     <SafeAreaView edges={['top', 'bottom']} style={[styles.safe, { backgroundColor: colors.bgCard }]}>
       <View style={[styles.userCard, { borderBottomColor: colors.border }]}>
         <Avatar name={user?.name || 'User'} size={56} />
-        <View style={{ flex: 1, marginLeft: 12 }}>
+        <View style={{ flex: 1, marginLeft: 12, minWidth: 0 }}>
           <Text style={[styles.userName, { color: colors.text }]} numberOfLines={1}>
             {user?.name || 'User'}
           </Text>
           <Text style={[styles.userRole, { color: colors.textMuted }]}>
-            {isAdmin ? '⭐ Administrator' : 'Member'}
+            {isAdmin ? 'Administrator' : 'Member'}
           </Text>
         </View>
       </View>
@@ -126,9 +129,11 @@ export default function DrawerMenu({ navigation }) {
               hoverTransition,
             ]}
           >
-            <Text style={[styles.itemIcon, { color: colors.textMuted }]}>
-              {mode === 'dark' ? '☾' : '☀'}
-            </Text>
+            <Ionicons
+              name={mode === 'dark' ? 'moon-outline' : 'sunny-outline'}
+              size={20}
+              color={colors.textMuted}
+            />
             <Text style={[styles.itemLabel, { color: colors.text }]}>
               {mode === 'dark' ? 'Dark Mode' : 'Light Mode'}
             </Text>
@@ -150,6 +155,7 @@ export default function DrawerMenu({ navigation }) {
             hoverTransition,
           ]}
         >
+          <Ionicons name="log-out-outline" size={18} color={colors.danger} />
           <Text style={[styles.logoutText, { color: colors.danger }]}>Logout</Text>
         </Pressable>
       </View>
@@ -160,10 +166,8 @@ export default function DrawerMenu({ navigation }) {
 const styles = StyleSheet.create({
   safe: { flex: 1 },
   userCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 20,
-    borderBottomWidth: 0.5,
+    flexDirection: 'row', alignItems: 'center',
+    padding: 20, borderBottomWidth: 0.5,
   },
   userName: { fontSize: 16, fontWeight: '700', letterSpacing: -0.2 },
   userRole: { fontSize: 12, fontWeight: '500', marginTop: 2 },
@@ -183,10 +187,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12, paddingVertical: 12,
     borderRadius: radius.sm, minHeight: 46,
   },
-  itemIcon: { fontSize: 18, width: 24, textAlign: 'center' },
   itemLabel: { flex: 1, fontSize: 14, fontWeight: '600', letterSpacing: -0.1 },
   itemValue: { fontSize: 11, fontWeight: '700', letterSpacing: 0.4 },
   footer: { padding: 16, borderTopWidth: 0.5 },
-  logoutBtn: { paddingVertical: 12, borderRadius: radius.md, alignItems: 'center' },
+  logoutBtn: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+    gap: 8, paddingVertical: 12, borderRadius: radius.md,
+  },
   logoutText: { fontSize: 13.5, fontWeight: '700' },
 });
